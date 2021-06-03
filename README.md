@@ -27,7 +27,7 @@ This is a port of c# [netcore-sci](https://github.com/devel0/netcore-sci) librar
     - [Line3D](data/api/Files/_line3_d_8h.md)
     - [Matrix3D](data/api/Files/_matrix3_d_8h.md)
     - [Quaternion](data/api/Files/_quaternion_8h.md)
-    - [Transform3D](data/api/Files/_transform3_d_8h.md.md)
+    - [Transform3D](data/api/Files/_transform3_d_8h.md)
     - [Vector3D](data/api/Files/_vector3_d_8h.md.md)
 
 ## Quickstart
