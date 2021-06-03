@@ -17,7 +17,7 @@ title: include/Quaternion.h
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md)** <br>[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  |
+| class | **[Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md)** <br>[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  |
 
 
 
@@ -26,7 +26,7 @@ title: include/Quaternion.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_quaternion_8h.md#function-operator*)**([Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md) qa, [Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md) qb) <br>Multiply [sa, va] * [sb, vb] = [sa * sb - va * vb, va x vb + sa * vb + sb * va].  |
+| [Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_quaternion_8h.md#function-operator*)**([Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md) qa, [Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md) qb) <br>Multiply [sa, va] * [sb, vb] = [sa * sb - va * vb, va x vb + sa * vb + sb * va].  |
 
 
 

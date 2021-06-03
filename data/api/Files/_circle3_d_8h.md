@@ -17,7 +17,7 @@ title: include/Circle3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Circle3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_circle3_d.md)**  |
+| class | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md)**  |
 
 
 

@@ -17,7 +17,7 @@ title: include/CoordinateSystem3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md)**  |
+| class | **[CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md)**  |
 
 
 
@@ -27,7 +27,7 @@ title: include/CoordinateSystem3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| const double | **[aaaSmall](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_coordinate_system3_d_8h.md#variable-aaasmall)**  |
+| const double | **[aaaSmall](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_coordinate_system3_d_8h.md#variable-aaasmall)**  |
 
 
 

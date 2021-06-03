@@ -9,7 +9,7 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 
 
 
-[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  [More...](#detailed-description)
+[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  [More...](#detailed-description)
 
 
 `#include <Quaternion.h>`
@@ -32,9 +32,9 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#function-quaternion)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & v) <br>direct construct quaternion q=[s, v]  |
-|  | **[Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#function-quaternion)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) alphaRad) <br>build quaternion from axis and angle. axis will be subjected to normalization.  |
-| [Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md) | **[Conjugate](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#function-conjugate)**() const <br>Conjugate q* = [s, -v]  |
+|  | **[Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#function-quaternion)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & v) <br>direct construct quaternion q=[s, v]  |
+|  | **[Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#function-quaternion)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) alphaRad) <br>build quaternion from axis and angle. axis will be subjected to normalization.  |
+| [Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md) | **[Conjugate](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#function-conjugate)**() const <br>Conjugate q* = [s, -v]  |
 
 
 
@@ -43,9 +43,9 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 
 |                | Name           |
 | -------------- | -------------- |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[v](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#variable-v)**  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[s](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#variable-s)**  |
-| const static [Quaternion](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md) & | **[Identity](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_quaternion.md#variable-identity)** <br>Identity qi = [1, nullvector]  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[v](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#variable-v)**  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[s](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#variable-s)**  |
+| const static [Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md) & | **[Identity](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md#variable-identity)** <br>Identity qi = [1, nullvector]  |
 
 
 
@@ -59,7 +59,7 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 class Quaternion;
 ```
 
-[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references: 
+[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references: 
 
 
 

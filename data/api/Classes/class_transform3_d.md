@@ -31,12 +31,12 @@ Use quaternion to append rotate transformations.
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Transform3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-transform3d)**() <br>instantiate an identity transformation  |
-| void | **[RotateAboutXAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutxaxis)**(double angleRad) <br>add rotation about X axis of given angle to the current rotation matrix  |
-| void | **[RotateAboutYAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutyaxis)**(double angleRad) <br>add rotation about Y axis of given angle to the current rotation matrix  |
-| void | **[RotateAboutZAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutzaxis)**(double angleRad) <br>add rotation about Z axis of given angle to the current rotation matrix  |
-| void | **[RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutaxis)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) <br>add rotation about given axis of given angle to the current rotation matrix. given axis will subjected to normalization  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Apply](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_transform3_d.md#function-apply)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & v) <br>apply this transformation to given vector returning new one  |
+|  | **[Transform3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-transform3d)**() <br>instantiate an identity transformation  |
+| void | **[RotateAboutXAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutxaxis)**(double angleRad) <br>add rotation about X axis of given angle to the current rotation matrix  |
+| void | **[RotateAboutYAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutyaxis)**(double angleRad) <br>add rotation about Y axis of given angle to the current rotation matrix  |
+| void | **[RotateAboutZAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutzaxis)**(double angleRad) <br>add rotation about Z axis of given angle to the current rotation matrix  |
+| void | **[RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-rotateaboutaxis)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) <br>add rotation about given axis of given angle to the current rotation matrix. given axis will subjected to normalization  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Apply](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_transform3_d.md#function-apply)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & v) <br>apply this transformation to given vector returning new one  |
 
 
 

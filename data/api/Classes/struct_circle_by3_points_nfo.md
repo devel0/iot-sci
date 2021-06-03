@@ -31,7 +31,7 @@ title: CircleBy3PointsNfo
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[CircleBy3PointsNfo](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#function-circleby3pointsnfo)**([CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md) cs, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) radius)  |
+|  | **[CircleBy3PointsNfo](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#function-circleby3pointsnfo)**([CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) cs, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) radius)  |
 
 
 
@@ -40,8 +40,8 @@ title: CircleBy3PointsNfo
 
 |                | Name           |
 | -------------- | -------------- |
-| [CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#variable-cs)**  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[radius](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#variable-radius)**  |
+| [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#variable-cs)**  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[radius](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md#variable-radius)**  |
 
 
 

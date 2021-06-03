@@ -17,7 +17,7 @@ title: include/Vector3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md)** <br>can be used to describe a wcs point or a vector x,y,z components from some reference origin  |
+| class | **[Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md)** <br>can be used to describe a wcs point or a vector x,y,z components from some reference origin  |
 
 
 
@@ -26,23 +26,23 @@ title: include/Vector3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) v) <br>vector scalar  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#function-operator*)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & v1, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & v2) <br>scalar multiply vector components V1 * V2 = (V1.x * V2.x, V1.y * V2.y, V1.z * V2.z)  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) v) <br>vector scalar  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#function-operator*)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & v1, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & v2) <br>scalar multiply vector components V1 * V2 = (V1.x * V2.x, V1.y * V2.y, V1.z * V2.z)  |
 
 
 ## Defines
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr)**  |
-|  | **[V3DSQRT](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dsqrt)**(x)  |
-|  | **[V3DACOS](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dacos)**(x)  |
-|  | **[V3DCOS](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dcos)**(x)  |
-|  | **[V3DSIN](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dsin)**(x)  |
-|  | **[V3DPOW](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dpow)**(x, y)  |
-|  | **[V3DTAN](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dtan)**(x)  |
-|  | **[V3DASIN](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dasin)**(x)  |
-|  | **[NormalizedLengthTolerance](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-normalizedlengthtolerance)**  |
+|  | **[V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr)**  |
+|  | **[V3DSQRT](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dsqrt)**(x)  |
+|  | **[V3DACOS](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dacos)**(x)  |
+|  | **[V3DCOS](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dcos)**(x)  |
+|  | **[V3DSIN](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dsin)**(x)  |
+|  | **[V3DPOW](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dpow)**(x, y)  |
+|  | **[V3DTAN](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dtan)**(x)  |
+|  | **[V3DASIN](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dasin)**(x)  |
+|  | **[NormalizedLengthTolerance](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-normalizedlengthtolerance)**  |
 
 
 

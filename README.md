@@ -31,7 +31,7 @@ Sci lib for ststm32 platform, mbed os framework.
 
 ## Quickstart
 
-Install using vscode command palette `PlatformIO: New Terminal` referring to [platformio registry](https://platformio.org/lib/show/11564/iot-utils/installation) cli mode doc.
+Install using vscode command palette `PlatformIO: New Terminal` referring to [platformio registry](https://platformio.org/lib/show/12380/iot-sci/installation) cli mode doc.
 
 ## Examples
  
@@ -55,6 +55,34 @@ pio test
 ```
 
 note: after start RESET may need to be pressed to start the test.
+
+```
+Testing...
+If you don't see any output for the first 10 secs, please reset board (press reset button)
+
+Stest/test-main.cpp:1592:torefact_Line3DTest_SplitTest  [PASSED]
+test/test-main.cpp:1593:torefact_Line3DTest_EnsureFromTest      [PASSED]
+test/test-main.cpp:1594:torefact_Line3DTest_NormalizedTest      [PASSED]
+test/test-main.cpp:1595:torefact_Line3DTest_BisectTest  [PASSED]
+test/test-main.cpp:1596:torefact_Line3DTest_LineOffseted        [PASSED]
+test/test-main.cpp:1597:torefact_old_Line3DTest [PASSED]
+test/test-main.cpp:1598:torefact_old_Vector3DTest       [PASSED]
+test/test-main.cpp:1599:torefact_old_Vector3DTest2      [PASSED]
+test/test-main.cpp:1600:torefact_old_Matrix3DTest       [PASSED]
+test/test-main.cpp:1601:torefact_old_Circle3DTest       [PASSED]
+test/test-main.cpp:1603:test_vector3d_normalized        [PASSED]
+test/test-main.cpp:1604:test_vector3d_distance  [PASSED]
+test/test-main.cpp:1605:test_transform3d        [PASSED]
+test/test-main.cpp:1606:test_coordinate_system3d        [PASSED]
+-----------------------
+47 Tests 0 Failures 0 Ignored
+================================================ [PASSED] Took 9.91 seconds ================================================
+
+Test    Environment    Status    Duration
+------  -------------  --------  ------------
+*       nucleo_f446re  PASSED    00:00:09.907
+=============================================== 1 succeeded in 00:00:09.907 ===============================================
+```
 
 ## How this project was built
 

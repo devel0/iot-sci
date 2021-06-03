@@ -31,71 +31,71 @@ can be used to describe a wcs point or a vector x,y,z components from some refer
 
 |                | Name           |
 | -------------- | -------------- |
-|  | **[Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**() <br>zero vector  |
-|  | **[Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) z) <br>build a vector by given components  |
-|  | **[Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y) <br>build a vector (x,y,0) by given components  |
-|  | **[~Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-~vector3d)**()  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[GetOrd](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-getord)**(int index) const  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[operator[]](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator[])**(int index) const <br>indexed vector component  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator+](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator+)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>vector sum  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator-](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator-)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>vector diff  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) const <br>vector scalar  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator/](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator/)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) const <br>vector scalar  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator*)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>dot product ( a b = |a| |b| cos(alfa) )  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[operator-](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-operator-)**() const <br>invert components sign  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Length](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-length)**() const <br>Length of this vector.  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Normalized](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-normalized)**() const <br>create a normalized version of this vector  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-distance)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute distance between this point and the other given  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-distance)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & other) const <br>compute perpendicular(min) distance of this point from given line  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance2D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-distance2d)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute distance of this point from the given in 2d ( x,y ) without consider z component  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[DotProduct](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-dotproduct)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute dot product of this vector for the given one 
+|  | **[Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**() <br>zero vector  |
+|  | **[Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) z) <br>build a vector by given components  |
+|  | **[Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-vector3d)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y) <br>build a vector (x,y,0) by given components  |
+|  | **[~Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-~vector3d)**()  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[GetOrd](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-getord)**(int index) const  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[operator[]](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator[])**(int index) const <br>indexed vector component  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator+](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator+)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>vector sum  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator-](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator-)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>vector diff  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) const <br>vector scalar  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator/](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator/)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) const <br>vector scalar  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator*)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & b) const <br>dot product ( a b = |a| |b| cos(alfa) )  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[operator-](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-operator-)**() const <br>invert components sign  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Length](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-length)**() const <br>Length of this vector.  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Normalized](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-normalized)**() const <br>create a normalized version of this vector  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-distance)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute distance between this point and the other given  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-distance)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & other) const <br>compute perpendicular(min) distance of this point from given line  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Distance2D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-distance2d)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute distance of this point from the given in 2d ( x,y ) without consider z component  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[DotProduct](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-dotproduct)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>compute dot product of this vector for the given one 
 
  a b = |a| |b| cos(alfa)  |
-| bool | **[IsPerpendicular](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-isperpendicular)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states is this vector is perpendicular to the given one  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[CrossProduct](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-crossproduct)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>Cross product ( not normalized ) ; 
+| bool | **[IsPerpendicular](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-isperpendicular)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states is this vector is perpendicular to the given one  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[CrossProduct](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-crossproduct)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>Cross product ( not normalized ) ; 
 
  a x b = |a| |b| sin(alfa) N ; 
 
  a x b = | x y z | | ax ay az | | bx by bz | 
 [reference](https://en.wikipedia.org/wiki/Cross_product) ;  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[AngleRad](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-anglerad)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tolLen, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & to) const <br>angle between this and given vector  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & to) const <br>project this vector to the given one  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & line) const <br>project this point to the given line  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Set](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-set)**(int ordIdx, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create a point copy of this one with component changed  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[SetX](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-setx)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with X changed  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[SetY](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-sety)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with Y changed  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[SetZ](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-setz)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with Z changed  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Rel](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rel)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & origin) const <br>create a vector relative to given origin from this point and given origin  |
-| bool | **[IsParallelTo](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-isparallelto)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>Note: tol must be Constants.NormalizedLengthTolerance if comparing normalized vectors  |
-| bool | **[Colinear](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-colinear)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states if this vector is colinear to the given one  |
-| bool | **[Concordant](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-concordant)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states if this vector concord to the given one  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[AngleToward](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-angletoward)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tolLen, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & to, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & refAxis) const <br>compute angle required to make this point go to the given one if rotate right-hand around given reference axis  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutXAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutxaxis)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around x-axis using quaternion  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutYAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutyaxis)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around y-axis using quaternion  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutZAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutzaxis)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around z-axis using quaternion  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point right-hand around given axis using quaternion  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & axisSegment, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point right-hand around given segment using quaternion  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAs](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & from, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & to, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleFactor =1.0, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleAddictionalRad =0) const <br>rotate this point using rotation like point from goes toward point to  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[ScaleAbout](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-scaleabout)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & origin, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) factor) const <br>Scale this point about the given origin with the given factor.  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[ScaleAbout](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-scaleabout)**(const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & origin, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & factor) const <br>Scale this point about the given origin with the given factor as (sx,sy,sz).  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Mirror](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-mirror)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & axis) const <br>mirror this point about given axis  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[ToUCS](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-toucs)**(const [CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>Convert this wcs point to given cs coord.  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[ToWCS](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-towcs)**(const [CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>Convert this ucs considered vector using given cs to the wcs.  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Scalar](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-scalar)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) xs, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) ys, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) zs) const <br>Scalar multiply each components.  |
-| [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [CoordinateSystem3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>wcs coord of projected coord to the given cs  |
-| bool | **[EqualsTol](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>checks vector component equality vs other given  |
-| bool | **[EqualsTol](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y) const <br>checks only x,y  |
-| bool | **[EqualsTol](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) z) const <br>checks vector component equality vs other given  |
-| string | **[ToString](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**(int decimals =3) const  |
-| string | **[ToString](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol) const <br>hash string with given tolerance  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[Zero](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-zero)**() <br>zero vector (0,0,0)  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[XAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-xaxis)**() <br>xaxis vector (1,0,0)  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[YAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-yaxis)**() <br>yaxis vector (0,1,0)  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[ZAxis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-zaxis)**() <br>zaxis vector (0,0,1)  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[One](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-one)**() <br>one vector (1,1,1)  |
-| const static [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & | **[Axis](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-axis)**(int ord) <br>retrieve wcs axis by given index  |
-| vector< [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) > | **[From2DCoords](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-from2dcoords)**(const vector< [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) > & coords) <br>Create an array of [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) from given list of 2d coords ( eg. { 100, 200, 300, 400 } will create follow list of vector3d = { (100,200,0), (300,400,0) }  |
-| vector< [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) > | **[From3DCoords](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#function-from3dcoords)**(const vector< [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) > & coords) <br>Create an array of [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) from given list of 3d coords ( eg. { 100, 200, 10, 300, 400, 20 } will create follow list of vector3d = { (100,200,10), (300,400,20) }  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[AngleRad](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-anglerad)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tolLen, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & to) const <br>angle between this and given vector  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & to) const <br>project this vector to the given one  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & line) const <br>project this point to the given line  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Set](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-set)**(int ordIdx, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create a point copy of this one with component changed  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[SetX](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-setx)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with X changed  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[SetY](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-sety)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with Y changed  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[SetZ](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-setz)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) value) <br>create new vector with Z changed  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Rel](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rel)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & origin) const <br>create a vector relative to given origin from this point and given origin  |
+| bool | **[IsParallelTo](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-isparallelto)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>Note: tol must be Constants.NormalizedLengthTolerance if comparing normalized vectors  |
+| bool | **[Colinear](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-colinear)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states if this vector is colinear to the given one  |
+| bool | **[Concordant](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-concordant)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>states if this vector concord to the given one  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[AngleToward](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-angletoward)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tolLen, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & to, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & refAxis) const <br>compute angle required to make this point go to the given one if rotate right-hand around given reference axis  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutXAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutxaxis)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around x-axis using quaternion  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutYAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutyaxis)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around y-axis using quaternion  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutZAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutzaxis)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point around z-axis using quaternion  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & axis, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point right-hand around given axis using quaternion  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & axisSegment, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleRad) const <br>rotate this point right-hand around given segment using quaternion  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & from, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & to, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleFactor =1.0, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) angleAddictionalRad =0) const <br>rotate this point using rotation like point from goes toward point to  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[ScaleAbout](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-scaleabout)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & origin, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) factor) const <br>Scale this point about the given origin with the given factor.  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[ScaleAbout](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-scaleabout)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & origin, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & factor) const <br>Scale this point about the given origin with the given factor as (sx,sy,sz).  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Mirror](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-mirror)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & axis) const <br>mirror this point about given axis  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[ToUCS](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-toucs)**(const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>Convert this wcs point to given cs coord.  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[ToWCS](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-towcs)**(const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>Convert this ucs considered vector using given cs to the wcs.  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Scalar](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-scalar)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) xs, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) ys, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) zs) const <br>Scalar multiply each components.  |
+| [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) | **[Project](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-project)**(const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool evalCSOrigin =true) const <br>wcs coord of projected coord to the given cs  |
+| bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>checks vector component equality vs other given  |
+| bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y) const <br>checks only x,y  |
+| bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) z) const <br>checks vector component equality vs other given  |
+| string | **[ToString](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**(int decimals =3) const  |
+| string | **[ToString](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol) const <br>hash string with given tolerance  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[Zero](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-zero)**() <br>zero vector (0,0,0)  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[XAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-xaxis)**() <br>xaxis vector (1,0,0)  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[YAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-yaxis)**() <br>yaxis vector (0,1,0)  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[ZAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-zaxis)**() <br>zaxis vector (0,0,1)  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[One](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-one)**() <br>one vector (1,1,1)  |
+| const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[Axis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-axis)**(int ord) <br>retrieve wcs axis by given index  |
+| vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[From2DCoords](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-from2dcoords)**(const vector< [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) > & coords) <br>Create an array of [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) from given list of 2d coords ( eg. { 100, 200, 300, 400 } will create follow list of vector3d = { (100,200,0), (300,400,0) }  |
+| vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[From3DCoords](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-from3dcoords)**(const vector< [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) > & coords) <br>Create an array of [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) from given list of 3d coords ( eg. { 100, 200, 10, 300, 400, 20 } will create follow list of vector3d = { (100,200,10), (300,400,20) }  |
 
 
 
@@ -104,9 +104,9 @@ can be used to describe a wcs point or a vector x,y,z components from some refer
 
 |                | Name           |
 | -------------- | -------------- |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[X](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#variable-x)**  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Y](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#variable-y)**  |
-| [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Z](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md#variable-z)**  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[X](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#variable-x)**  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Y](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#variable-y)**  |
+| [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Z](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#variable-z)**  |
 
 
 
@@ -950,7 +950,7 @@ project this vector to the given one
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) projected vector ( will be colinear to the given one ) 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) projected vector ( will be colinear to the given one ) 
 
 
 
@@ -992,7 +992,7 @@ project this point to the given line
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) projected point onto the line ( perpendicularly ) 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) projected point onto the line ( perpendicularly ) 
 
 
 
@@ -1036,7 +1036,7 @@ create a point copy of this one with component changed
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) new vector with component changed 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) new vector with component changed 
 
 
 
@@ -1078,7 +1078,7 @@ create new vector with X changed
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) output vector with X changed 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) output vector with X changed 
 
 
 
@@ -1120,7 +1120,7 @@ create new vector with Y changed
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) output vector with Y changed 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) output vector with Y changed 
 
 
 
@@ -1162,7 +1162,7 @@ create new vector with Z changed
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) output vector with Z changed 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) output vector with Z changed 
 
 
 
@@ -1204,7 +1204,7 @@ create a vector relative to given origin from this point and given origin
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) vector 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) vector 
 
 
 
@@ -1416,7 +1416,7 @@ rotate this point around x-axis using quaternion
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
 
 
 
@@ -1458,7 +1458,7 @@ rotate this point around y-axis using quaternion
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
 
 
 
@@ -1500,7 +1500,7 @@ rotate this point around z-axis using quaternion
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
 
 
 
@@ -1544,7 +1544,7 @@ rotate this point right-hand around given axis using quaternion
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
 
 
 
@@ -1588,7 +1588,7 @@ rotate this point right-hand around given segment using quaternion
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) rotated point 
 
 
 
@@ -1638,7 +1638,7 @@ rotate this point using rotation like point from goes toward point to
 
 
 
-**Return**: [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md)
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md)
 
 
 
@@ -2368,7 +2368,7 @@ static vector< Vector3D > From2DCoords(
 )
 ```
 
-Create an array of [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) from given list of 2d coords ( eg. { 100, 200, 300, 400 } will create follow list of vector3d = { (100,200,0), (300,400,0) } 
+Create an array of [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) from given list of 2d coords ( eg. { 100, 200, 300, 400 } will create follow list of vector3d = { (100,200,0), (300,400,0) } 
 
 
 
@@ -2405,7 +2405,7 @@ static vector< Vector3D > From3DCoords(
 )
 ```
 
-Create an array of [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) from given list of 3d coords ( eg. { 100, 200, 10, 300, 400, 20 } will create follow list of vector3d = { (100,200,10), (300,400,20) } 
+Create an array of [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) from given list of 3d coords ( eg. { 100, 200, 10, 300, 400, 20 } will create follow list of vector3d = { (100,200,10), (300,400,20) } 
 
 
 

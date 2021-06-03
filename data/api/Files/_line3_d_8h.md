@@ -16,13 +16,13 @@ title: include/Line3D.h
 
 | Name           |
 | -------------- |
-| **[std](https://github.com/devel0/iot-utils/tree/main/data/api/Namespaces/namespacestd.md)**  |
+| **[std](https://github.com/devel0/iot-sci/tree/main/data/api/Namespaces/namespacestd.md)**  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md)**  |
+| class | **[Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md)**  |
 
 
 
@@ -31,10 +31,10 @@ title: include/Line3D.h
 
 |                | Name           |
 | -------------- | -------------- |
-| [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_line3_d_8h.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & l) <br>multiply Length by given scalar factor Note : this will change To  |
-| [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) | **[operator*](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_line3_d_8h.md#function-operator*)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & l, [V3DNR](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) <br>multiply Length by given scalar factor Note : this will change To  |
-| [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) | **[operator+](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_line3_d_8h.md#function-operator+)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & l, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & delta) <br>Move this line of given delta adding value either at From, To.  |
-| [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) | **[operator-](https://github.com/devel0/iot-utils/tree/main/data/api/Files/_line3_d_8h.md#function-operator-)**(const [Line3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_line3_d.md) & l, const [Vector3D](https://github.com/devel0/iot-utils/tree/main/data/api/Classes/class_vector3_d.md) & delta) <br>Move this line of given delta subtracting value either at From, To.  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_line3_d_8h.md#function-operator*)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l) <br>multiply Length by given scalar factor Note : this will change To  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[operator*](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_line3_d_8h.md#function-operator*)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) s) <br>multiply Length by given scalar factor Note : this will change To  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[operator+](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_line3_d_8h.md#function-operator+)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & delta) <br>Move this line of given delta adding value either at From, To.  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[operator-](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_line3_d_8h.md#function-operator-)**(const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & delta) <br>Move this line of given delta subtracting value either at From, To.  |
 
 
 
