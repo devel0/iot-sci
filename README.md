@@ -35,7 +35,8 @@ This is a port of c# [netcore-sci](https://github.com/devel0/netcore-sci) librar
 Install using vscode command palette `PlatformIO: New Terminal` referring to [platformio registry](https://platformio.org/lib/show/12380/iot-sci/installation) cli mode doc.
 
 ## Examples
- 
+
+see [unit tests](test/test-main.cpp)
 
 ## Debugging
 
