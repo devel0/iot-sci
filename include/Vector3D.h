@@ -157,8 +157,7 @@ public:
     V3DNR Distance2D(const Vector3D &other) const;
 
     /**
-     * @brief compute dot product of this vector for the given one            
-     * ```a b = |a| |b| cos(alfa)```
+     * @brief compute dot product of this vector for the given one `a b = |a| |b| cos(alfa)`
      * @param other second vector     
      */
     V3DNR DotProduct(const Vector3D &other) const;
@@ -171,11 +170,10 @@ public:
     bool IsPerpendicular(const Vector3D &other) const;
 
     /**
-     * @brief Cross product ( not normalized ) ;            
-     * a x b = |a| |b| sin(alfa) N ;        
-     * a x b = |  x  y  z |
-     *         | ax ay az |
-     *         | bx by bz |            
+     * @brief Cross product ( not normalized ) `a x b = |a| |b| sin(alfa)` ;
+     * 
+     * `a x b = |  x  y  z |       | ax ay az |      | bx by bz |`
+     * 
      * [reference](https://en.wikipedia.org/wiki/Cross_product) ;          
      * 
      * @param other other vector     
