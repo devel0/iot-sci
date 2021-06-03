@@ -15,6 +15,7 @@
 ## Description
 
 Sci lib for ststm32 platform, mbed os framework.
+This is a port of c# [netcore-sci](https://github.com/devel0/netcore-sci) library.
 
 ## API
 
