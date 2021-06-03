@@ -9,7 +9,7 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 
 
 
-[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  [More...](#detailed-description)
+[Quaternion]() implementation using doubles for purpose of Vector3D.RotateAboutAxis and Vector3D.RotateAs references:  [More...](#detailed-description)
 
 
 `#include <Quaternion.h>`
@@ -59,7 +59,7 @@ summary: Quaternion implementation using doubles for purpose of Vector3D.RotateA
 class Quaternion;
 ```
 
-[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references: 
+[Quaternion]() implementation using doubles for purpose of Vector3D.RotateAboutAxis and Vector3D.RotateAs references: 
 
 
 

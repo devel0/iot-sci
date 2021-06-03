@@ -17,7 +17,7 @@ title: include/Quaternion.h
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md)** <br>[Quaternion]() implementation using doubles for purpose of [Vector3D.RotateAboutAxis](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateaboutaxis) and [Vector3D.RotateAs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-rotateas) references:  |
+| class | **[Quaternion](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_quaternion.md)** <br>[Quaternion]() implementation using doubles for purpose of Vector3D.RotateAboutAxis and Vector3D.RotateAs references:  |
 
 
 

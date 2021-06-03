@@ -158,7 +158,7 @@ public:
 
     /**
      * @brief compute dot product of this vector for the given one            
-     * a b = |a| |b| cos(alfa)            
+     * ```a b = |a| |b| cos(alfa)```
      * @param other second vector     
      */
     V3DNR DotProduct(const Vector3D &other) const;
