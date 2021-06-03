@@ -21,13 +21,13 @@ This is a port of c# [netcore-sci](https://github.com/devel0/netcore-sci) librar
 
 - [classes](data/api/index_classes.md)
 - sci (arduino, mbed)
-    - [Arc3D](data/api/Classes/class_arc3_d_8h.md)
-    - [Circle3D](data/api/Classes/class_circle3_d_8h.md)
-    - [CoordinateSystem3D](data/api/Classes/class_coordinate_system3_d_8h.md)
-    - [Line3D](data/api/Classes/class_line3_d_8h.md)
-    - [Matrix3D](data/api/Classes/class_matrix3_d_8h.md)
-    - [Quaternion](data/api/Classes/class_quaternion_8h.md)
-    - [Transform3D](data/api/Classes/class_transform3_d_8h.md)
+    - [Arc3D](data/api/Classes/class_arc3_d.md)
+    - [Circle3D](data/api/Classes/class_circle3_d.md)
+    - [CoordinateSystem3D](data/api/Classes/class_coordinate_system3_d.md)
+    - [Line3D](data/api/Classes/class_line3_d.md)
+    - [Matrix3D](data/api/Classes/class_matrix3_d.md)
+    - [Quaternion](data/api/Classes/class_quaternion.md)
+    - [Transform3D](data/api/Classes/class_transform3_d.md)
     - [Vector3D](data/api/Classes/class_vector3_d.md)
 
 ## Quickstart
