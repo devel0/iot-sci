@@ -1,0 +1,38 @@
+{
+    "name": "iot-sci",
+    "version": "1.0.0",
+    "description": "Sci for ststm32 framework and mbed, arduino platforms.",
+    "keywords": "vector,geometry,linear-algebra",
+    "authors": {
+        "name": "Lorenzo Delana",
+        "email": "lorenzo.delana@gmail.com"
+    },
+    "license": "MIT",
+    "frameworks": [
+        "mbed",
+        "arduino"
+    ],
+    "platforms": [
+        "ststm32"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devel0/iot-sci.git"
+    },
+    "examples": [
+        {
+            "name": "example01",
+            "base": "examples/example01",
+            "files": [
+                "example01.cpp"
+            ]
+        }
+    ],
+    "dependencies": {        
+    },
+    "export": {
+        "exclude": [
+            "src/debug-main.cpp"
+        ]
+    }
+}
