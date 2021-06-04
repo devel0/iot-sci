@@ -37,6 +37,7 @@ Inherits from [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Class
 |  | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circle3d)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p1, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p2, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p3)  |
 | bool | **[Contains](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-contains)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p, bool onlyPerimeter)  |
 | vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool only_perimeter =true, bool segment_mode =false) const <br>intersect this 3d circle with given 3d line  |
+| vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) & other) const <br>intersect this 3d circle with given other  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Area](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-area)**() const  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[Length](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-length)**() const <br>Circle perimeter.  |
 | vector< [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) > | **[CirclesTan12P](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circlestan12p)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & t1, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & t2, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p) <br>build 3d circle that tangent to lines t1,t2 and that intersects point p note: point p must contained in one of t1,t2 circle will be inside region t1.V toward t2.V they are 4 circles  |
@@ -284,6 +285,44 @@ vector< Vector3D > Intersect(
 ```
 
 intersect this 3d circle with given 3d line 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### function Intersect
+
+```cpp
+vector< Vector3D > Intersect(
+    V3DNR tol,
+    const Circle3D & other
+) const
+```
+
+intersect this 3d circle with given other 
 
 
 

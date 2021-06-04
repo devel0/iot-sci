@@ -613,6 +613,12 @@ public:
 
     static vector<Vector3D> From3DCoords(const vector<V3DNR> &coords);
 
+    Line3D LineTo(const Vector3D& to) const;
+
+    Line3D LineV(const Vector3D& v) const;
+
+    Line3D LineDir(const Vector3D& dir, V3DNR len, bool applyDirNorm = false) const;
+
     string ToString(int decimals = 3) const;
 
     string ToString(V3DNR tol) const;

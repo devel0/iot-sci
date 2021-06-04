@@ -79,6 +79,9 @@ can be used to describe a wcs point or a vector x,y,z components from some refer
 | bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & other) const <br>checks vector component equality vs other given  |
 | bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y) const <br>checks only x,y  |
 | bool | **[EqualsTol](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-equalstol)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) x, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) y, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) z) const <br>checks vector component equality vs other given  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[LineTo](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-lineto)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & to) const <br>build [Line3D]() from this to given to  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[LineV](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-linev)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & v) const <br>build [Line3D]() from this to (this+vector)  |
+| [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) | **[LineDir](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-linedir)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & dir, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) len, bool applyDirNorm =false) const <br>build [Line3D]() from this to (this+dir*len)  |
 | string | **[ToString](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**(int decimals =3) const  |
 | string | **[ToString](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-tostring)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol) const <br>hash string with given tolerance  |
 | const static [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & | **[Zero](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md#function-zero)**() <br>zero vector (0,0,0)  |
@@ -2039,6 +2042,136 @@ checks vector component equality vs other given
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### function LineTo
+
+```cpp
+Line3D LineTo(
+    const Vector3D & to
+) const
+```
+
+build [Line3D]() from this to given to 
+
+**Parameters**: 
+
+  * **to** line3d to point 
+
+
+
+
+
+
+
+**Return**: build [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) from this to given to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### function LineV
+
+```cpp
+Line3D LineV(
+    const Vector3D & v
+) const
+```
+
+build [Line3D]() from this to (this+vector) 
+
+**Parameters**: 
+
+  * **v** vector to add this to obtain line to 
+
+
+
+
+
+
+
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md)[Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) from this to (this+given vector) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### function LineDir
+
+```cpp
+Line3D LineDir(
+    const Vector3D & dir,
+    V3DNR len,
+    bool applyDirNorm =false
+) const
+```
+
+build [Line3D]() from this to (this+dir*len) 
+
+**Parameters**: 
+
+  * **dir** direction 
+  * **len** length of the line 
+  * **applyDirNorm** apply normalization to given direction ( default:false ) 
+
+
+
+
+
+
+
+**Return**: [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md)[Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) from this to (this+dir*len) 
 
 
 
