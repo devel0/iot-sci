@@ -410,6 +410,32 @@ public:
      */
     static vector<Vector3D> From3DCoords(const vector<V3DNR> &coords);
 
+    /**
+     * @brief build Line3D from this to given to
+     * 
+     * @param to line3d to point
+     * @return build Line3D from this to given to
+     */
+    Line3D LineTo(const Vector3D& to) const;
+
+    /**
+     * @brief build Line3D from this to (this+vector)
+     * 
+     * @param v vector to add this to obtain line to
+     * @return Vector3D Line3D from this to (this+given vector)
+     */
+    Line3D LineV(const Vector3D& v) const;
+
+    /**
+     * @brief build Line3D from this to (this+dir*len)
+     * 
+     * @param dir direction
+     * @param len length of the line
+     * @param applyDirNorm apply normalization to given direction ( default:false )
+     * @return Vector3D Line3D from this to (this+dir*len)
+     */
+    Line3D LineDir(const Vector3D& dir, V3DNR len, bool applyDirNorm = false) const;
+
     string ToString(int decimals = 3) const;
 
     /**

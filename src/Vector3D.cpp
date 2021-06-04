@@ -459,6 +459,22 @@ vector<Vector3D> Vector3D::From3DCoords(const vector<V3DNR> &coords)
     return res;
 }
 
+Line3D Vector3D::LineTo(const Vector3D &to) const
+{
+    return Line3D(*this, to);
+}
+
+Line3D Vector3D::LineV(const Vector3D &v) const
+{
+    return Line3D(*this, v, Line3D::Line3DConstructMode::PointAndVector);
+}
+
+Line3D Vector3D::LineDir(const Vector3D &dir, V3DNR len, bool applyDirNorm) const
+{
+    return Line3D(*this, (applyDirNorm ? dir.Normalized() : dir) * len,
+                  Line3D::Line3DConstructMode::PointAndVector);
+}
+
 string Vector3D::ToString(int decimals) const
 {
     string res = "(";
