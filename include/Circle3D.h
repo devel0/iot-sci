@@ -13,6 +13,14 @@ public:
     bool Contains(V3DNR tol, const Vector3D &p, bool onlyPerimeter);
 
     /**
+     * @brief create a circle copy with origin moved
+     * 
+     * @param tol_len length tolerance
+     * @param delta new circle origin delta     
+     */
+    Circle3D Move(V3DNR tol_len, const Vector3D &delta) const;
+
+    /**
      * @brief build 3d circle that tangent to lines t1,t2 and that intersects point p
      * note: point p must contained in one of t1,t2
      * circle will be inside region t1.V toward t2.V
@@ -25,7 +33,7 @@ public:
      * they can be two
      */
     static vector<Circle3D> CircleRTanP(V3DNR tol_len, const Vector3D &p, const Line3D &t, V3DNR r);
-
+   
     /**
      * @brief intersect this 3d circle with given 3d line
      */

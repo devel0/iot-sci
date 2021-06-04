@@ -1608,8 +1608,26 @@ void test_circle3d_0001()
             316.22776602);
 
         auto qInt = c1.Intersect(tol, c2);
-        
+
         TEST_ASSERT_TRUE(qInt.size() == 0);
+    }
+
+    //
+    {
+        auto c = Circle3D(1e-3,
+                          CoordinateSystem3D::WCS().Move(
+                              Vector3D(250.21546070748141, -926.81833345210805)),
+                          125).Move(1e-3, Vector3D::Zero());
+
+        auto l = Line3D(
+            Vector3D(0, -960), Vector3D(1, 0, 0),
+            Line3D::Line3DConstructMode::PointAndVector);
+
+        auto q = c.Intersect(1e-3, l);
+
+        TEST_ASSERT_TRUE(q.size() == 2);
+        TEST_ASSERT_TRUE(q[0].EqualsTol(1e-3, 370.731, -960, 0));
+        TEST_ASSERT_TRUE(q[1].EqualsTol(1e-3, 129.7, -960, 0));
     }
 }
 

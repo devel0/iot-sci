@@ -19,6 +19,11 @@ bool Circle3D::Contains(V3DNR tol, const Vector3D &p, bool onlyPerimeter)
     return Arc3D::Contains(tol, p, false, onlyPerimeter);
 }
 
+Circle3D Circle3D::Move(V3DNR tol_len, const Vector3D &delta) const
+{
+    return Circle3D(tol_len, cs.Move(delta), radius);
+}
+
 vector<Circle3D> Circle3D::CirclesTan12P(V3DNR tol_len, const Line3D &t1, const Line3D &t2, const Vector3D &p)
 {
     vector<Circle3D> res;

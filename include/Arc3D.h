@@ -201,7 +201,7 @@ public:
      * @param segment_mode if true treat given line as segment; if false as infinite line
      * @return vector<Vector3D> 
      */
-    vector<Vector3D> Intersect(V3DNR tol, const Line3D &l, bool only_perimeter = true, bool segment_mode = false) const;
+    virtual vector<Vector3D> Intersect(V3DNR tol, const Line3D &l, bool only_perimeter = true, bool segment_mode = false) const;
 
     /**
      * @brief find ips of intersect this arc to the given cs plane; 
