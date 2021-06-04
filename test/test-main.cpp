@@ -1550,6 +1550,69 @@ void test_arc3d_0001()
     TEST_ASSERT_TRUE(i2.EqualsTol(tol, Vector3D(72.20796391, 188.29182351 - 5.18335819)));
 }
 
+void test_circle3d_0001()
+{
+    // 2 pts
+    {
+        auto tol = 1e-4;
+
+        auto c1 = Circle3D(tol,
+                           Vector3D(12652.2, -847.9),
+                           Vector3D(12527.2, -722.9),
+                           Vector3D(12402.2, -847.9));
+
+        auto c2 = Circle3D(tol,
+                           Vector3D(13357.5, 112.1),
+                           Vector3D(12397.5, 1072.1),
+                           Vector3D(11437.5, 112.1));
+
+        auto qInt = c1.Intersect(tol, c2);
+
+        TEST_ASSERT_TRUE(qInt.size() == 2);
+        TEST_ASSERT_TRUE(qInt[0].EqualsTol(tol, 12402.20000052949, -847.888494720131, 0));
+        TEST_ASSERT_TRUE(qInt[1].EqualsTol(tol, 12647.715463548095, -814.7183326852199, 0));
+    }
+
+    // 1 pt
+    {
+        auto tol = 1e-4;
+
+        auto c1 = Circle3D(
+            tol,
+            CoordinateSystem3D::WCS().Move(Vector3D(12397.5233, 112.1186)),
+            960);
+
+        auto c2 = Circle3D(
+            tol,
+            CoordinateSystem3D::WCS().Move(Vector3D(13535.4631, -465.6793)),
+            316.22776602);
+
+        auto qInt = c1.Intersect(tol, c2);
+
+        TEST_ASSERT_TRUE(qInt.size() == 1);
+        TEST_ASSERT_TRUE(qInt[0].EqualsTol(tol, 13253.500741174445, -322.5106905459212, 0));
+    }
+
+    // 0 pt
+    {
+        auto tol = 1e-4;
+
+        auto c1 = Circle3D(
+            tol,
+            CoordinateSystem3D::WCS().Move(Vector3D(12397.5233, 112.1186)),
+            960);
+
+        auto c2 = Circle3D(
+            tol,
+            CoordinateSystem3D::WCS().Move(Vector3D(13535.4631 + 1, -465.6793)),
+            316.22776602);
+
+        auto qInt = c1.Intersect(tol, c2);
+        
+        TEST_ASSERT_TRUE(qInt.size() == 0);
+    }
+}
+
 void setup()
 {
     UNITY_BEGIN();
@@ -1604,6 +1667,7 @@ void setup()
     RUN_TEST(test_vector3d_distance);
     RUN_TEST(test_transform3d);
     RUN_TEST(test_coordinate_system3d);
+    RUN_TEST(test_circle3d_0001);
     //RUN_TEST(test_arc3d_0001);
 
     UNITY_END();

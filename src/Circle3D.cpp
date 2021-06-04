@@ -95,6 +95,83 @@ vector<Vector3D> Circle3D::Intersect(V3DNR tol, const Line3D &l, bool only_perim
     return Arc3D::Intersect(tol, l, only_perimeter, segment_mode, true);
 }
 
+vector<Vector3D> Circle3D::Intersect(V3DNR tol, const Circle3D &other) const
+{
+    if (EqualsTol(tol, other))
+        error("circles are same");
+
+    vector<Vector3D> res;
+
+    if (cs.IsParallelTo(tol, other.cs))
+    {
+        auto centersDst = cs.Origin().Distance(other.cs.Origin());
+        auto rsum = radius + other.radius;
+
+        // check if circles couldn't intersect
+        if (::GreatThanTol(tol, centersDst, rsum))
+            return res;
+
+        if (::EqualsTol(tol, centersDst, rsum))
+        {
+            auto q = Intersect(tol, cs.Origin().LineTo(other.cs.Origin()))[0];
+            res.push_back(q);
+            return res;
+        }
+
+        // http://www.ambrsoft.com/TrigoCalc/Circles2/circle2intersection/CircleCircleIntersection.htm
+
+        auto _center = cs.Origin().ToUCS(cs);
+        auto _otherCenter = other.cs.Origin().ToUCS(cs);
+
+        auto c1_a = _center.X;
+        auto c1_b = _center.Y;
+        auto c2_a = _otherCenter.X;
+        auto c2_b = _otherCenter.Y;
+        auto c1_r = radius;
+        auto c2_r = other.radius;
+        auto D = centersDst;
+
+        auto a1 = D + c1_r + c2_r;
+        auto a2 = D + c1_r - c2_r;
+        auto a3 = D - c1_r + c2_r;
+        auto a4 = -D + c1_r + c2_r;
+
+        auto area = V3DSQRT(a1 * a2 * a3 * a4) / 4;
+
+        auto val1 = (c1_a + c2_a) / 2 + (c2_a - c1_a) * (c1_r * c1_r - c2_r * c2_r) / (2 * D * D);
+        auto val2 = 2 * (c1_b - c2_b) * area / (D * D);
+
+        auto x1 = val1 + val2;
+        auto x2 = val1 - val2;
+
+        val1 = (c1_b + c2_b) / 2 + (c2_b - c1_b) * (c1_r * c1_r - c2_r * c2_r) / (2 * D * D);
+        val2 = 2 * (c1_a - c2_a) * area / (D * D);
+
+        auto y1 = val1 - val2;
+        auto y2 = val1 + val2;
+
+        auto test = abs((x1 - c1_a) * (x1 - c1_a) + (y1 - c1_b) * (y1 - c1_b) - c1_r * c1_r);
+        if (test > tol)
+        {
+            auto tmp = y1;
+            y1 = y2;
+            y2 = tmp;
+        }
+
+        auto P1 = Vector3D(x1, y1).ToWCS(cs);
+        auto P2 = Vector3D(x2, y2).ToWCS(cs);
+
+        res.push_back(P1);
+        res.push_back(P2);
+    }
+    else
+    {
+        error("not impl");
+    }
+
+    return res;
+}
+
 V3DNR Circle3D::Area() const
 {
     return PI * radius * radius;
