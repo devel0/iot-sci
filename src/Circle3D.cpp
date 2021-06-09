@@ -123,48 +123,38 @@ vector<Vector3D> Circle3D::Intersect(V3DNR tol, const Circle3D &other) const
             return res;
         }
 
-        // http://www.ambrsoft.com/TrigoCalc/Circles2/circle2intersection/CircleCircleIntersection.htm
-
-        auto _center = cs.Origin().ToUCS(cs);
-        auto _otherCenter = other.cs.Origin().ToUCS(cs);
-
-        auto c1_a = _center.X;
-        auto c1_b = _center.Y;
-        auto c2_a = _otherCenter.X;
-        auto c2_b = _otherCenter.Y;
-        auto c1_r = radius;
-        auto c2_r = other.radius;
-        auto D = centersDst;
-
-        auto a1 = D + c1_r + c2_r;
-        auto a2 = D + c1_r - c2_r;
-        auto a3 = D - c1_r + c2_r;
-        auto a4 = -D + c1_r + c2_r;
-
-        auto area = V3DSQRT(a1 * a2 * a3 * a4) / 4;
-
-        auto val1 = (c1_a + c2_a) / 2 + (c2_a - c1_a) * (c1_r * c1_r - c2_r * c2_r) / (2 * D * D);
-        auto val2 = 2 * (c1_b - c2_b) * area / (D * D);
-
-        auto x1 = val1 + val2;
-        auto x2 = val1 - val2;
-
-        val1 = (c1_b + c2_b) / 2 + (c2_b - c1_b) * (c1_r * c1_r - c2_r * c2_r) / (2 * D * D);
-        val2 = 2 * (c1_a - c2_a) * area / (D * D);
-
-        auto y1 = val1 - val2;
-        auto y2 = val1 + val2;
-
-        auto test = abs((x1 - c1_a) * (x1 - c1_a) + (y1 - c1_b) * (y1 - c1_b) - c1_r * c1_r);
-        if (test > tol)
+        Vector3D P1, P2;
         {
-            auto tmp = y1;
-            y1 = y2;
-            y2 = tmp;
-        }
+            // https://math.stackexchange.com/a/1367732/688020
 
-        auto P1 = Vector3D(x1, y1).ToWCS(cs);
-        auto P2 = Vector3D(x2, y2).ToWCS(cs);
+            auto _center = Center().ToUCS(CS());
+            auto _otherCenter = other.Center().ToUCS(CS());
+
+            auto r1 = Radius();
+            auto r2 = other.Radius();
+            auto x1 = _center.X;
+            auto y1 = _center.Y;
+            auto x2 = _otherCenter.X;
+            auto y2 = _otherCenter.Y;
+            auto dx = x2 - x1;
+            auto dy = y2 - y1;
+            auto R = V3DSQRT(dx * dx + dy * dy);
+            auto R2 = R * R;
+            auto R4 = R2 * R2;
+            auto r1pow2 = r1 * r1;
+            auto r2pow2 = r2 * r2;
+            auto r12pow2diff = r1pow2 - r2pow2;
+            auto r12pow2sum = r1pow2 + r2pow2;
+            auto a = r12pow2diff / (2 * R2);
+            auto c = V3DSQRT(2 * r12pow2sum / R2 - (r12pow2diff * r12pow2diff) / R4 - 1);
+            auto fx = (x1 + x2) / 2 + a * (x2 - x1);
+            auto gx = c * (y2 - y1) / 2;
+            auto fy = (y1 + y2) / 2 + a * (y2 - y1);
+            auto gy = c * (x1 - x2) / 2;
+
+            P1 = Vector3D(fx + gx, fy + gy).ToWCS(CS());
+            P2 = Vector3D(fx - gx, fy - gy).ToWCS(CS());
+        }
 
         res.push_back(P1);
         res.push_back(P2);

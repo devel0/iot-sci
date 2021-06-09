@@ -1569,8 +1569,8 @@ void test_circle3d_0001()
         auto qInt = c1.Intersect(tol, c2);
 
         TEST_ASSERT_TRUE(qInt.size() == 2);
-        TEST_ASSERT_TRUE(qInt[0].EqualsTol(tol, 12402.20000052949, -847.888494720131, 0));
-        TEST_ASSERT_TRUE(qInt[1].EqualsTol(tol, 12647.715463548095, -814.7183326852199, 0));
+        TEST_ASSERT_TRUE(qInt[1].EqualsTol(tol, 12402.20000052949, -847.888494720131, 0));
+        TEST_ASSERT_TRUE(qInt[0].EqualsTol(tol, 12647.715463548095, -814.7183326852199, 0));
     }
 
     // 1 pt
