@@ -55,7 +55,7 @@ Inherited by [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Cla
 | bool | **[Contains](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-contains)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & pt, bool onlyPerimeter) const <br>states if given point relies on this arc perimeter or shape depending on arguments  |
 | vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[IntersectCircle](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-intersectcircle)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool segment_mode =false) const <br>intersect this 3d circle with given 3d line  |
 | vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool only_perimeter, bool segment_mode, bool circle_mode) const <br>states if this arc intersect given line  |
-| vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool only_perimeter =true, bool segment_mode =false) const <br>find ips of intersection between this arc and given line  |
+| virtual vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool only_perimeter =true, bool segment_mode =false) const <br>find ips of intersection between this arc and given line  |
 | vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, bool only_perimeter =true) const <br>find ips of intersect this arc to the given cs plane; return empty set if arc cs plane parallel to other given cs  |
 | [CircleBy3PointsNfo](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/struct_circle_by3_points_nfo.md) | **[CircleBy3Points](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-circleby3points)**(const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p1, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p2, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p3) <br>helper to build circle by given 3 points  |
 | [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md) | **[Arc3DBy3Points](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#function-arc3dby3points)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p1, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p2, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p3, const nullable< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > & normal =nullable< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) >()) <br>build 3d arc by given 3 points  |
@@ -985,7 +985,7 @@ states if this arc intersect given line
 ### function Intersect
 
 ```cpp
-vector< Vector3D > Intersect(
+virtual vector< Vector3D > Intersect(
     V3DNR tol,
     const Line3D & l,
     bool only_perimeter =true,
@@ -1026,6 +1026,8 @@ find ips of intersection between this arc and given line
 
 
 
+
+**Reimplemented by**: [Circle3D::Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-intersect)
 
 
 

@@ -306,7 +306,7 @@ public:
 
     vector<Vector3D> Intersect(V3DNR tol, const Line3D &l, bool only_perimeter, bool segment_mode, bool circle_mode) const;
 
-    vector<Vector3D> Intersect(V3DNR tol, const Line3D &l, bool only_perimeter = true, bool segment_mode = false) const;
+    virtual vector<Vector3D> Intersect(V3DNR tol, const Line3D &l, bool only_perimeter = true, bool segment_mode = false) const;
 
     vector<Vector3D> Intersect(V3DNR tol, const CoordinateSystem3D &cs, bool only_perimeter = true) const;
 };
