@@ -215,8 +215,8 @@ Matrix3D operator/(const Matrix3D &m, V3DNR s)
 
 Vector3D operator*(const Matrix3D &m, const Vector3D &v)
 {
-    auto res = new double[3];
-
+    double res[3];
+    
     for (int r = 0; r < 3; ++r)
     {
         auto s = 0.0;
@@ -232,8 +232,8 @@ Vector3D operator*(const Matrix3D &m, const Vector3D &v)
 
 Vector3D operator*(const Vector3D &v, const Matrix3D &m)
 {
-    auto res = new double[3];
-
+    double res[3];
+    
     for (int c = 0; c < 3; ++c)
     {
         auto s = 0.0;
