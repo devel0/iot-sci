@@ -69,7 +69,7 @@ Inherited by [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Cla
 |                | Name           |
 | -------------- | -------------- |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[radius](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-radius)**  |
-| const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-cs)**  |
+| [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-cs)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[tol_rad](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-tol_rad)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[angle_start](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-angle_start)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[angle_end](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-angle_end)**  |
@@ -1217,7 +1217,7 @@ V3DNR radius;
 ### variable cs
 
 ```cpp
-const CoordinateSystem3D cs;
+CoordinateSystem3D cs;
 ```
 
 

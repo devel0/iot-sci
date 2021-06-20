@@ -32,10 +32,12 @@ Inherits from [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Class
 
 |                | Name           |
 | -------------- | -------------- |
+|  | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circle3d)**() <br>Construct a new trigonometric circle centered in 0,0,0 with radius=1.  |
 |  | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circle3d)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) & cs, [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) r)  |
 |  | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circle3d)**(const [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md) & arc)  |
 |  | **[Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-circle3d)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p1, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p2, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p3)  |
 | bool | **[Contains](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-contains)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & p, bool onlyPerimeter)  |
+| [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) | **[operator=](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-operator=)**(const [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) & other)  |
 | [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) | **[Move](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-move)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol_len, const [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) & delta) const <br>create a circle copy with origin moved  |
 | virtual vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Line3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_line3_d.md) & l, bool only_perimeter =true, bool segment_mode =false) const <br>intersect this 3d circle with given 3d line  |
 | vector< [Vector3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_vector3_d.md) > | **[Intersect](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md#function-intersect)**([V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) tol, const [Circle3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_circle3_d.md) & other) const <br>intersect this 3d circle with given other  |
@@ -101,7 +103,7 @@ Inherits from [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Class
 |                | Name           |
 | -------------- | -------------- |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[radius](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-radius)**  |
-| const [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-cs)**  |
+| [CoordinateSystem3D](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_coordinate_system3_d.md) | **[cs](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-cs)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[tol_rad](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-tol_rad)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[angle_start](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-angle_start)**  |
 | [V3DNR](https://github.com/devel0/iot-sci/tree/main/data/api/Files/_vector3_d_8h.md#define-v3dnr) | **[angle_end](https://github.com/devel0/iot-sci/tree/main/data/api/Classes/class_arc3_d.md#variable-angle_end)**  |
@@ -121,6 +123,41 @@ Inherits from [Arc3D](https://github.com/devel0/iot-sci/tree/main/data/api/Class
 
 
 ## Public Functions Documentation
+
+### function Circle3D
+
+```cpp
+Circle3D()
+```
+
+Construct a new trigonometric circle centered in 0,0,0 with radius=1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### function Circle3D
 
@@ -242,6 +279,42 @@ bool Contains(
     V3DNR tol,
     const Vector3D & p,
     bool onlyPerimeter
+)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### function operator=
+
+```cpp
+Circle3D operator=(
+    const Circle3D & other
 )
 ```
 

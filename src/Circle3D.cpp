@@ -2,6 +2,10 @@
 
 #include <number-utils.h>
 
+Circle3D::Circle3D() : Arc3D(1e-6, CoordinateSystem3D::WCS(), 1, 0, 2 * PI)
+{
+}
+
 Circle3D::Circle3D(V3DNR tol_len, const CoordinateSystem3D &cs, V3DNR r) : Arc3D(tol_len, cs, r, 0, 2 * PI)
 {
 }
@@ -12,6 +16,17 @@ Circle3D::Circle3D(const Arc3D &arc) : Arc3D(arc)
 
 Circle3D::Circle3D(V3DNR tol_len, const Vector3D &p1, const Vector3D &p2, const Vector3D &p3) : Arc3D(Arc3D::Arc3DBy3Points(tol_len, p1, p2, p3))
 {
+}
+
+Circle3D Circle3D::operator=(const Circle3D &other)
+{
+    radius = other.radius;
+    cs = other.cs;
+    tol_rad = other.tol_rad;
+    angle_start = other.angle_start;
+    angle_end = other.angle_end;
+
+    return *this;
 }
 
 bool Circle3D::Contains(V3DNR tol, const Vector3D &p, bool onlyPerimeter)

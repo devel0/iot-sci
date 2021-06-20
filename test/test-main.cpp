@@ -252,6 +252,19 @@ void torefact_Arc3DTest_007()
     }
 }
 
+
+void Circle3DTest_001()
+{
+    auto tol = 1e-7;
+
+    auto c1 = Circle3D(tol, CoordinateSystem3D::WCS(), 102);
+
+    auto c2 = c1;
+
+    TEST_ASSERT_TRUE(c1.EqualsTol(tol, c2));
+    TEST_ASSERT_FALSE(&c1 == &c2);
+}
+
 // torefact_CoordinateSystem3DTest
 
 void torefact_CoordinateSystem3DTest_001()
@@ -1640,6 +1653,8 @@ void setup()
     RUN_TEST(torefact_Arc3DTest_003);
     RUN_TEST(torefact_Arc3DTest_005);
     RUN_TEST(torefact_Arc3DTest_007);
+
+    RUN_TEST(Circle3DTest_001);
 
     RUN_TEST(torefact_CoordinateSystem3DTest_001);
     RUN_TEST(torefact_CoordinateSystem3DTest_002);

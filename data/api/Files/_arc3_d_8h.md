@@ -248,7 +248,7 @@ class Arc3D
 
 protected:
     V3DNR radius;
-    const CoordinateSystem3D cs;
+    CoordinateSystem3D cs;
     V3DNR tol_rad;
     V3DNR angle_start;
     V3DNR angle_end;

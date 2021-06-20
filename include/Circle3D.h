@@ -6,11 +6,17 @@
 class Circle3D : public Arc3D
 {
 public:
+    /**
+     * @brief Construct a new trigonometric circle centered in 0,0,0 with radius=1
+     */
+    Circle3D();
     Circle3D(V3DNR tol_len, const CoordinateSystem3D &cs, V3DNR r);
     Circle3D(const Arc3D &arc);
     Circle3D(V3DNR tol_len, const Vector3D &p1, const Vector3D &p2, const Vector3D &p3);
 
     bool Contains(V3DNR tol, const Vector3D &p, bool onlyPerimeter);
+
+    Circle3D operator=(const Circle3D &other);
 
     /**
      * @brief create a circle copy with origin moved
@@ -33,7 +39,7 @@ public:
      * they can be two
      */
     static vector<Circle3D> CircleRTanP(V3DNR tol_len, const Vector3D &p, const Line3D &t, V3DNR r);
-   
+
     /**
      * @brief intersect this 3d circle with given 3d line
      */
