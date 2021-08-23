@@ -1,6 +1,6 @@
 {
     "name": "iot-sci",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Sci for ststm32 framework and mbed, arduino platforms.",
     "keywords": "vector,geometry,linear-algebra",
     "authors": {
