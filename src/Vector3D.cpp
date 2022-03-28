@@ -68,6 +68,7 @@ const Vector3D &Vector3D::Axis(int ord)
         return ZAxis();
     default:
         error("v3dAxis: invalid ord");
+        return XAxis(); // never hitted (just to avoid Werror=return-type)
     }
 }
 
@@ -106,6 +107,7 @@ V3DNR Vector3D::GetOrd(int index) const
         return Z;
     }
     error("invalid ord index %d", index);
+    return X; // never hitted (just to avoid Werror=return-type)
 }
 
 V3DNR Vector3D::operator[](int index) const

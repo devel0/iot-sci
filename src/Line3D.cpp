@@ -454,6 +454,7 @@ Line3D Line3D::EnsureFrom(V3DNR tolLen, const Vector3D &pt) const
     if (To().EqualsTol(tolLen, pt))
         return Reverse();
     error("ensurefrom: pt not found");
+    return *this; // never hitted (just to avoid Werror=return-type)
 }
 
 Line3D Line3D::Offset(V3DNR tol, const Vector3D &refPt, V3DNR offset) const
